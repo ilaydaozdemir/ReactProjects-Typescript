@@ -1,0 +1,26 @@
+.input__box {
+  box-shadow: inset 0 0 10px #9bc6bf;
+  width: 70%;
+  border-radius: 50px;
+  padding: 20px 30px;
+  border: none;
+  transition: 0.2s;
+  font-size: 25px;
+}
+.input__box:focus {
+  outline: none;
+  box-shadow: 0 0 10px 1000px #9bc6bf;
+}
+.input__submit {
+  width: 60px;
+  height: 60px;
+  background-color: #294282;
+  color: white;
+  align-items: center;
+  border-radius: 50px;
+  transition: 0.2s all;
+  border: none;
+  font-size: 15px;
+  box-shadow: 0 0 10px #294282;
+  cursor: pointer;
+}
