@@ -20,6 +20,10 @@ const App: FC = () => {
   return (
     <div className="container">
       <InputFeild todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
+      {/**todolist */}
+      {todos.map((t) => (
+        <li>{t.todo}</li>
+      ))}
     </div>
   );
 };
