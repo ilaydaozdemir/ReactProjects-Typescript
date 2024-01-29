@@ -21,8 +21,10 @@ const App: FC = () => {
     <div className="container">
       <InputFeild todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
       {/**todolist */}
-      {todos.map((t) => (
-        <li>{t.todo}</li>
+      {todos.map((t, i) => (
+        <ul key={i}>
+          <li>{t.todo}</li>
+        </ul>
       ))}
     </div>
   );
