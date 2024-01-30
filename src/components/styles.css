@@ -5,7 +5,6 @@
   padding: 20px 30px;
   border: none;
   transition: 0.2s;
-  font-size: 25px;
 }
 .input__box:focus {
   outline: none;
@@ -20,11 +19,16 @@
   border-radius: 50px;
   transition: 0.2s all;
   border: none;
-  font-size: 25px;
+
   box-shadow: 0 0 10px #294282;
   cursor: pointer;
 }
 .container {
+  .todos__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
   ul {
     list-style: none;
   }

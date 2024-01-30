@@ -19,13 +19,17 @@ const App: FC = () => {
   console.log(todos);
   return (
     <div className="container">
-      <InputFeild todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
+      <div className="todo__input">
+        <InputFeild todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
+      </div>{" "}
       {/**todolist */}
-      {todos.map((t, i) => (
-        <ul key={i}>
-          <li>{t.todo}</li>
-        </ul>
-      ))}
+      <div className="todos__list">
+        {todos.map((t, i) => (
+          <ul key={i}>
+            <li>{t.todo}</li>
+          </ul>
+        ))}
+      </div>
     </div>
   );
 };
